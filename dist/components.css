@@ -1,0 +1,284 @@
+.btn {
+
+    display: flex;
+
+    height: fit-content;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 0.75rem;
+
+    border-radius: 0.5rem;
+
+    border-width: 1px;
+
+    font-size: 1.125rem;
+
+    line-height: 1.75rem;
+
+    font-weight: 600;
+
+    --tw-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+
+    --tw-shadow-colored: 0px 1px 2px var(--tw-shadow-color);
+
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    transition-duration: 300ms;
+
+    animation-duration: 300ms
+}
+
+.btn:disabled {
+
+    cursor: not-allowed
+}
+
+  .btn.btn-primary,
+  .btn:not(.btn-secondary):not(.btn-gray) {
+
+    --tw-border-opacity: 1;
+
+    border-color: rgb(21 112 239 / var(--tw-border-opacity));
+
+    --tw-bg-opacity: 1;
+
+    background-color: rgb(21 112 239 / var(--tw-bg-opacity));
+
+    --tw-text-opacity: 1;
+
+    color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+  .btn.btn-primary:hover,
+  .btn:not(.btn-secondary):not(.btn-gray):hover {
+
+    --tw-border-opacity: 1;
+
+    border-color: rgb(23 92 211 / var(--tw-border-opacity));
+
+    --tw-bg-opacity: 1;
+
+    background-color: rgb(23 92 211 / var(--tw-bg-opacity))
+}
+
+  .btn.btn-primary:disabled,
+  .btn:not(.btn-secondary):not(.btn-gray):disabled {
+
+    --tw-border-opacity: 1;
+
+    border-color: rgb(178 221 255 / var(--tw-border-opacity));
+
+    --tw-bg-opacity: 1;
+
+    background-color: rgb(178 221 255 / var(--tw-bg-opacity))
+}
+
+  .btn.btn-primary:hover:disabled,
+  .btn:not(.btn-secondary):not(.btn-gray):hover:disabled {
+
+    --tw-border-opacity: 1;
+
+    border-color: rgb(178 221 255 / var(--tw-border-opacity));
+
+    --tw-bg-opacity: 1;
+
+    background-color: rgb(178 221 255 / var(--tw-bg-opacity))
+}
+
+  .btn.btn-secondary {
+
+    --tw-border-opacity: 1;
+
+    border-color: rgb(239 248 255 / var(--tw-border-opacity));
+
+    --tw-bg-opacity: 1;
+
+    background-color: rgb(239 248 255 / var(--tw-bg-opacity));
+
+    --tw-text-opacity: 1;
+
+    color: rgb(23 92 211 / var(--tw-text-opacity))
+}
+
+  .btn.btn-secondary:hover {
+
+    --tw-border-opacity: 1;
+
+    border-color: rgb(209 233 255 / var(--tw-border-opacity));
+
+    --tw-bg-opacity: 1;
+
+    background-color: rgb(209 233 255 / var(--tw-bg-opacity));
+
+    --tw-text-opacity: 1;
+
+    color: rgb(23 92 211 / var(--tw-text-opacity))
+}
+
+  .btn.btn-secondary:disabled {
+
+    --tw-border-opacity: 1;
+
+    border-color: rgb(245 250 255 / var(--tw-border-opacity));
+
+    --tw-bg-opacity: 1;
+
+    background-color: rgb(245 250 255 / var(--tw-bg-opacity));
+
+    --tw-text-opacity: 1;
+
+    color: rgb(132 202 255 / var(--tw-text-opacity))
+}
+
+  .btn.btn-secondary:hover:disabled {
+
+    --tw-border-opacity: 1;
+
+    border-color: rgb(245 250 255 / var(--tw-border-opacity));
+
+    --tw-bg-opacity: 1;
+
+    background-color: rgb(245 250 255 / var(--tw-bg-opacity));
+
+    --tw-text-opacity: 1;
+
+    color: rgb(132 202 255 / var(--tw-text-opacity))
+}
+
+  .btn.btn-gray {
+
+    --tw-border-opacity: 1;
+
+    border-color: rgb(208 213 221 / var(--tw-border-opacity));
+
+    --tw-bg-opacity: 1;
+
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+
+    --tw-text-opacity: 1;
+
+    color: rgb(52 64 84 / var(--tw-text-opacity))
+}
+
+  .btn.btn-gray:hover {
+
+    --tw-bg-opacity: 1;
+
+    background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+
+    --tw-text-opacity: 1;
+
+    color: rgb(29 41 57 / var(--tw-text-opacity))
+}
+
+  .btn.btn-gray:disabled {
+
+    --tw-border-opacity: 1;
+
+    border-color: rgb(234 236 240 / var(--tw-border-opacity));
+
+    --tw-bg-opacity: 1;
+
+    background-color: rgb(234 236 240 / var(--tw-bg-opacity));
+
+    --tw-text-opacity: 1;
+
+    color: rgb(208 213 221 / var(--tw-text-opacity))
+}
+
+  .btn.btn-gray:hover:disabled {
+
+    --tw-border-opacity: 1;
+
+    border-color: rgb(234 236 240 / var(--tw-border-opacity));
+
+    --tw-bg-opacity: 1;
+
+    background-color: rgb(234 236 240 / var(--tw-bg-opacity));
+
+    --tw-text-opacity: 1;
+
+    color: rgb(208 213 221 / var(--tw-text-opacity))
+}
+
+  .btn.btn-full {
+
+    width: 100%
+}
+
+  .btn:not(.btn-full) {
+
+    width: fit-content
+}
+
+  .btn.btn-sm {
+
+    padding-left: 0.875rem;
+
+    padding-right: 0.875rem;
+
+    padding-top: 0.5rem;
+
+    padding-bottom: 0.5rem
+}
+
+  .btn.btn-md,
+  .btn:not(.btn-sm):not(.btn-lg):not(.btn-xl):not(.btn-xxl) {
+
+    padding-left: 1rem;
+
+    padding-right: 1rem;
+
+    padding-top: 0.625rem;
+
+    padding-bottom: 0.625rem
+}
+
+  .btn.btn-lg {
+
+    padding-left: 1.125rem;
+
+    padding-right: 1.125rem;
+
+    padding-top: 0.625rem;
+
+    padding-bottom: 0.625rem
+}
+
+  .btn.btn-xl {
+
+    padding-left: 1.25rem;
+
+    padding-right: 1.25rem;
+
+    padding-top: 0.75rem;
+
+    padding-bottom: 0.75rem
+}
+
+  .btn.btn-xxl {
+
+    padding-left: 1.75rem;
+
+    padding-right: 1.75rem;
+
+    padding-top: 1rem;
+
+    padding-bottom: 1rem
+}
+
+  .btn > svg {
+
+    height: 1.5rem;
+
+    width: 1.5rem
+}

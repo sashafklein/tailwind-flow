@@ -1,0 +1,62 @@
+.btn {
+  @apply items-center justify-center gap-3 rounded-lg border text-lg
+    flex h-fit flex-row
+    font-semi shadow-xs transition-colors
+    duration-300
+    disabled:cursor-not-allowed;
+
+  &.btn-primary,
+  &:not(.btn-secondary):not(.btn-gray) {
+    @apply border-primary-600 bg-primary-600 text-white
+      hover:border-primary-700 hover:bg-primary-700
+      disabled:border-primary-200 disabled:bg-primary-200
+      disabled:hover:border-primary-200 disabled:hover:bg-primary-200;
+  }
+
+  &.btn-secondary {
+    @apply border-primary-50 bg-primary-50 text-primary-700
+      hover:border-primary-100 hover:bg-primary-100 hover:text-primary-700
+      disabled:border-primary-25 disabled:bg-primary-25 disabled:text-primary-300
+      disabled:hover:border-primary-25 disabled:hover:bg-primary-25 disabled:hover:text-primary-300;
+  }
+
+  &.btn-gray {
+    @apply border-gray-300 bg-white text-gray-700
+      hover:bg-gray-50 hover:text-gray-800
+      disabled:border-gray-200 disabled:bg-gray-200 disabled:text-gray-300
+      disabled:hover:border-gray-200 disabled:hover:bg-gray-200 disabled:hover:text-gray-300;
+  }
+
+  &.btn-full {
+    @apply w-full;
+  }
+
+  &:not(.btn-full) {
+    @apply w-fit;
+  }
+
+  &.btn-sm {
+    @apply px-3.5 py-2;
+  }
+
+  &.btn-md,
+  &:not(.btn-sm):not(.btn-lg):not(.btn-xl):not(.btn-xxl) {
+    @apply px-4 py-2.5;
+  }
+
+  &.btn-lg {
+    @apply px-[1.125rem] py-2.5;
+  }
+
+  &.btn-xl {
+    @apply px-5 py-3;
+  }
+
+  &.btn-xxl {
+    @apply px-7 py-4;
+  }
+
+  > svg {
+    @apply h-6 w-6;
+  }
+}

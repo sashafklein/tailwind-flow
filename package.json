@@ -1,0 +1,19 @@
+{
+  "name": "tw-demo",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "build:tw": "postcss tailwind/components/*.css --dir dist/components && cat dist/components/*.css > dist/components.css && prejss-cli dist/components.css"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.3.6",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.32",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^15.1.0",
+    "prejss-cli": "^0.3.3"
+  }
+}
